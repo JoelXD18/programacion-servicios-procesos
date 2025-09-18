@@ -3,8 +3,9 @@
 0. Amplía el tamaño máximo del historial de la shell y configura que cada línea del historial muestre también la fecha y la hora.
 
 ```bash
-
- 
+export HISTSIZE=10000 # cantidad de comandos 
+export HISTFILESIZE=20000 # tamaño del fichero de almacenamiento
+export HISTTIMEFORMAT="%F %T"
 ```
 
 1. Comprueba que ahora, al mostrar el historial, aparece la fecha y hora junto a los comandos ejecutados.
@@ -15,7 +16,12 @@ history
 
 2. Configura estos cambios para que sean permantentes
 ```bash
+sudo nano $HOME/.bashrc
+# incorporamos los comandos dentro
 
+export HISTSIZE=10000 # cantidad de comandos 
+export HISTFILESIZE=20000 # tamaño del fichero de almacenamiento
+export HISTTIMEFORMAT="%F %T"
 ```
 
 ---
@@ -24,27 +30,27 @@ history
 
 1. Muestra toda la información de tu sistema operativo y kernel.
 ```bash
-
+uname -a
 ```
     
 2. Averigua únicamente la versión del kernel.
 ```bash
-
+uname -r
 ```
     
 3. Comprueba el espacio en disco disponible.
 ```bash
-
+df -h
 ```
     
 4. Calcula cuánto espacio ocupa la carpeta `/etc`.
 ```bash
-
+du -sh /etc
 ```
     
 5. Consulta la memoria RAM disponible y usada.
 ```bash
-
+free -h
 ```
     
 
@@ -265,7 +271,7 @@ history
     
 41. Cambia los permisos de un archivo a `755`.
 ```bash
-
+chmod 775 archivo1.txt
 ```
     
 42. Cambia el propietario de un archivo a otro usuario.

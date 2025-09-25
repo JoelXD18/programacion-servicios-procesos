@@ -258,7 +258,7 @@ ssh joel@127.0.0.1
     
 38. Copia un archivo desde tu máquina a otra mediante una conexión remota segura.
 ```bash
-scp archivo.txt usuario@ip_maquina:/ruta/destino
+scp listado.txt joel@127.0.0.1:/prueba/listado.txt
 ```
 
 ---
@@ -277,12 +277,12 @@ sudo passwd alumno1
     
 41. Cambia los permisos de un archivo a `755`.
 ```bash
-chmod 755 archivo1.txt
+chmod 755 listado.txt
 ```
     
 42. Cambia el propietario de un archivo a otro usuario.
 ```bash
-sudo chown otroUsuario archivo1.txt
+sudo chown alumno1 listado.txt
 ```
     
 43. Elimina el usuario creado.

@@ -253,7 +253,7 @@ dig google.com
     
 37. Conéctate de forma remota a otra máquina mediante un protocolo seguro (si tienes acceso).
 ```bash
-ssh usuario@ip_maquina
+ssh joel@127.0.0.1
 ```
     
 38. Copia un archivo desde tu máquina a otra mediante una conexión remota segura.
